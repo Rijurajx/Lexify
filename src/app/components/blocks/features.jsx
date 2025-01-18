@@ -11,7 +11,7 @@ const content = [
       content: (
         <div className="h-full w-full flex items-center justify-center text-white bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))]">
           <Image
-            src="/ai-summarization-placeholder.webp"
+            src="https://theblue.ai/wp-content/uploads/2023/06/text_conentSummarization_AI-thegem-blog-timeline-large.png"
             width={300}
             height={300}
             className="h-full w-full object-cover"
@@ -27,7 +27,7 @@ const content = [
       content: (
         <div className="h-full w-full flex items-center justify-center text-white bg-[linear-gradient(to_bottom_right,var(--orange-500),var(--yellow-500))]">
           <Image
-            src="/clause-detection-placeholder.webp"
+            src="https://www.shutterstock.com/image-vector/man-confuse-decide-about-terms-600nw-1864038253.jpg"
             width={300}
             height={300}
             className="h-full w-full object-cover"
@@ -43,7 +43,7 @@ const content = [
       content: (
         <div className="h-full w-full flex items-center justify-center text-white bg-[linear-gradient(to_bottom_right,var(--red-500),var(--orange-500))]">
           <Image
-            src="/risk-analysis-placeholder.webp"
+            src="https://static.vecteezy.com/system/resources/previews/017/780/785/non_2x/risk-illustration-risk-document-with-hand-and-pen-business-background-vector.jpg"
             width={300}
             height={300}
             className="h-full w-full object-cover"
@@ -59,7 +59,7 @@ const content = [
       content: (
         <div className="h-full w-full flex items-center justify-center text-white bg-[linear-gradient(to_bottom_right,var(--blue-500),var(--purple-500))]">
           <Image
-            src="/real-time-collaboration-placeholder.webp"
+            src="https://a.storyblok.com/f/99519/1100x619/88ffae4af1/real-time-collaboration-blog.png/m/2160x1216/filters:format(png)"
             width={300}
             height={300}
             className="h-full w-full object-cover"
@@ -75,7 +75,7 @@ const content = [
         content: (
           <div className="h-full w-full flex items-center justify-center text-white bg-[linear-gradient(to_bottom_right,var(--gray-700),var(--black))]">
             <Image
-              src="/contract-comparison-placeholder.webp"
+              src="https://png.pngtree.com/png-vector/20210713/ourlarge/pngtree-smart-contract-deals-business-png-image_3592690.jpg"
               width={300}
               height={300}
               className="h-full w-full object-cover"
