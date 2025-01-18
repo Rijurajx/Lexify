@@ -19,3 +19,27 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+html {
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+}
+
+body::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
+}
+
+/* Hide the scrollbar for WebKit browsers (Chrome, Safari, Edge) */
+.sticky-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide the scrollbar for Firefox */
+.sticky-scrollbar {
+  scrollbar-width: none; /* Hide scrollbar in Firefox */
+}
+
+/* Optional: If you're using Tailwind CSS, you can also hide the scrollbar by applying `overflow-hidden` */
+.sticky-scrollbar {
+  overflow: -moz-scrollbars-none;
+  scrollbar-width: none;
+}
