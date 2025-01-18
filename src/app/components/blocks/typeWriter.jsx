@@ -22,8 +22,8 @@ export function TypeWriter() {
       
           <TypewriterEffectSmooth className="opacity-50 " words={words} />
           <div className="flex flex-row justify-center items-center gap-x-36">
-              <ButtonBorder text="Login" link="#" />
-              <ButtonBorder text="Signup" link="#"/>
+              <ButtonBorder text="Login" link="/pages/sign-in" />
+              <ButtonBorder text="Signup" link="/pages/sign-up"/>
           </div>
           
       
