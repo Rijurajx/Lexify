@@ -1,4 +1,5 @@
 "use client";
+import { UserButton } from "@clerk/nextjs";
 import React, { useState } from "react";
 import {
   ArchiveX,
@@ -264,8 +265,9 @@ export function AppSidebar(props) {
             </SidebarGroup>
           </SidebarContent>
           <SidebarFooter className="border-t border-gray-700 bg-[#0f172a]">
-            <NavUser user={data.user} />
+          <UserButton/>
           </SidebarFooter>
+          
         </Sidebar>
 
         {/* Second Sidebar */}
