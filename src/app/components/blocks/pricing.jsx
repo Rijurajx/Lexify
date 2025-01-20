@@ -3,7 +3,7 @@ import { PricingCardGrid } from "../ui/card-hover-effect";
 const plans = [
     {
       planName: "Standard",
-      price: "₹3,500",
+      price: "₹500",
       features: [
         "5 GB Document Storage",
         "Basic Legal Support",
@@ -14,7 +14,7 @@ const plans = [
     },
     {
       planName: "Value",
-      price: "₹5,500",
+      price: "₹800",
       features: [
         "20 GB Document Storage",
         "24/7 Legal Support",
@@ -25,7 +25,7 @@ const plans = [
     },
     {
       planName: "Max",
-      price: "₹7,500",
+      price: "₹1000",
       features: [
         "Unlimited Document Storage",
         "Dedicated Legal Support",

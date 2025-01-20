@@ -417,29 +417,30 @@ export function AppSidebar(props) {
       </Sidebar>
 
       {/* Confirmation Modal */}
-      {showModal && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
-          <div className="bg-white p-6 rounded-lg max-w-sm w-full">
-            <h3 className="text-lg font-semibold">
-              Are you sure you want to delete this document?
-            </h3>
-            <div className="flex justify-between gap-2 mt-4">
-              <button
-                className="px-4 py-2 bg-gray-300 text-black rounded"
-                onClick={() => setShowModal(false)}
-              >
-                Cancel
-              </button>
-              <button
-                className="px-4 py-2 bg-red-600 text-white rounded"
-                onClick={handleDelete}
-              >
-                Yes, Delete
-              </button>
-            </div>
-          </div>
-        </div>
-      )}
+{showModal && (
+  <div className="fixed inset-0 bg-black bg-opacity-60 flex justify-center items-center z-50">
+    <div className="bg-[#0f172a] p-6 rounded-lg max-w-sm w-full border border-gray-700">
+      <h3 className="text-lg font-semibold text-gray-200">
+        Are you sure you want to delete this document?
+      </h3>
+      <div className="flex justify-between gap-2 mt-4">
+        <button
+          className="px-4 py-2 bg-gray-700 text-gray-300 rounded hover:bg-gray-600 hover:text-white transition duration-150"
+          onClick={() => setShowModal(false)}
+        >
+          Cancel
+        </button>
+        <button
+          className="px-4 py-2 bg-red-600 text-white rounded hover:bg-red-500 transition duration-150"
+          onClick={handleDelete}
+        >
+          Yes, Delete
+        </button>
+      </div>
+    </div>
+  </div>
+)}
+
     </>
   );
 }
