@@ -39,13 +39,14 @@ export default function Page() {
                   href="#"
                   className="text-sidebar-secondary-foreground hover:text-sidebar-accent-foreground"
                 >
-                  All Inboxes
+                  Lexify
                 </BreadcrumbLink>
               </BreadcrumbItem>
               <BreadcrumbSeparator className="hidden md:block text-sidebar-accent" />
               <BreadcrumbItem>
                 <BreadcrumbPage className="text-sidebar-primary-foreground">
-                  Inbox
+                  Clarity in complexity
+                  
                 </BreadcrumbPage>
               </BreadcrumbItem>
             </BreadcrumbList>

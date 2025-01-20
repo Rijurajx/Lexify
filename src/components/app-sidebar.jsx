@@ -1,4 +1,5 @@
 "use client";
+import OperationButton from "@/app/components/ui/operationButton";
 import { UserButton } from "@clerk/nextjs";
 import React, { useState } from "react";
 import {
@@ -269,11 +270,10 @@ export function AppSidebar(props) {
           </SidebarFooter>
           
         </Sidebar>
-
         {/* Second Sidebar */}
         <Sidebar
           collapsible="none"
-          className="hidden flex-1 md:flex bg-[#0f172a] text-gray-400"
+          className="hidden flex-1 md:flex bg-[#0f172a] text-gray-400 overflow-hidden"
         >
           <SidebarHeader className="gap-3.5 border-b border-gray-700 p-4">
             <div className="flex w-full items-center justify-between">
@@ -281,7 +281,7 @@ export function AppSidebar(props) {
                 {activeItem.title}
               </div>
               <Label className="flex items-center gap-2 text-sm">
-                <span>Unreads</span>
+                <span>Mode</span>
                 <Switch className="shadow-none" />
               </Label>
             </div>
@@ -292,23 +292,23 @@ export function AppSidebar(props) {
               className="bg-[#1e293b] text-gray-300 border border-gray-600"
             />
           </SidebarHeader>
-          <SidebarContent className="overflow-y-scroll">
+          <SidebarContent className="overflow-y-hidden">
             <SidebarGroup className="px-0">
               <SidebarGroupContent>
                 {activeItem.title === "Upload" ? (
                   <div className="flex flex-col gap-4 p-4">
-                    {data.navMain
-                      .find((item) => item.title === "Upload")
-                      .operations.map((operation, index) => (
-                        <button
-                          key={index}
-                          className="px-4 py-2 rounded-lg bg-blue-600 text-white hover:bg-blue-700"
-                          onClick={() => alert(`${operation} clicked`)}
-                        >
-                          {operation}
-                        </button>
-                      ))}
-                  </div>
+                  {data.navMain
+                    .find((item) => item.title === "Upload")
+                    .operations.map((operation, index) => (
+                      <OperationButton
+                        key={index}
+                        onClick={() => alert(`${operation} clicked`)}
+                      >
+                        {operation} {/* Pass operation name here */}
+                      </OperationButton>
+                    ))}
+                </div>
+                
                 ) : activeItem.title === "Drafts" ? (
                   <div className="flex flex-col gap-4 p-4">
                     {filteredDrafts.length > 0 ? (
