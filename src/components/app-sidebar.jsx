@@ -266,7 +266,7 @@ export function AppSidebar(props) {
               </SidebarGroupContent>
             </SidebarGroup>
           </SidebarContent>
-          <SidebarFooter className="border-t border-gray-700 bg-[#0f172a] pb-24">
+          <SidebarFooter className="border-t border-gray-700 bg-[#0f172a] ">
           <UserButton/>
           </SidebarFooter>
           
